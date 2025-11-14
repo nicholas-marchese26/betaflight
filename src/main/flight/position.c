@@ -50,7 +50,7 @@
 static float displayAltitudeCm = 0.0f;
 static bool altitudeAvailable = false;
 
-static float zeroedAltitudeCm = 0.0f;
+float zeroedAltitudeCm = 0.0f;
 static float zeroedAltitudeDerivative = 0.0f;
 
 static pt2Filter_t altitudeLpf;
