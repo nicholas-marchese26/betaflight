@@ -1,3 +1,5 @@
 #pragma once
 
-void myFunction();
+void gpsDistanceUpdate();
+
+uint32_t getMaxDistance(void);
