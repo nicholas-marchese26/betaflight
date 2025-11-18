@@ -6,4 +6,4 @@ uint32_t getMaxDistance(void);
 
 float getMaxAltitudeMeters(void);
 
-float getMax3DDistanceMeters(void);
+void getMax3DDistanceMeters(void);
