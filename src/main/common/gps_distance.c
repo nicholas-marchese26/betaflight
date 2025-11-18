@@ -7,6 +7,7 @@
 #ifdef USE_GPS
 
 static uint32_t maxDistance = 0;
+static uint32_t threeD_Distancemax = 0;
 
 void gpsDistanceUpdate(void)
 {
@@ -51,12 +52,12 @@ uint32_t getMaxDistance(void)
 }
 
 
-float getMax3DDistanceMeters(void)
+void getMax3DDistanceMeters(void)
 {
     uint32_t horizontalM = getMaxDistance();
     float maxAltM = getMaxAltitudeMeters();
     float max3DDistance = sqrtf(horizontalM * horizontalM + maxAltM * maxAltM);
-    return max3DDistance;
+    threeD_Distancemax = max3DDistance;
 }
 
 #endif
