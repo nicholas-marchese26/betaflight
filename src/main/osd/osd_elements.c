@@ -347,6 +347,18 @@ static void osdFormatAltitudeString(char * buff, int32_t altitudeCm, osdElementT
 }
 
 #ifdef USE_GPS
+// Dynamic drawing function for Spool Left (max distance)
+void osdElementSpoolLeft(osdElementParms_t *element)
+{
+    // Draw the maximum distance stored in stats
+    osdDrawNumber(element->x, element->y, stats.max_distance, OSD_UNITS_METERS);
+
+    // Optional: draw a static label next to the value
+    osdDrawText(element->x - 20, element->y, "Spool L");
+}
+#endif
+
+#ifdef USE_GPS
 static void osdFormatCoordinate(char *buff, gpsCoordinateType_e coordinateType, osdElementType_e variantType)
 {
     int32_t gpsValue = 0;
