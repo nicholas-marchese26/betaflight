@@ -7,7 +7,7 @@
 #ifdef USE_GPS
 
 static uint32_t maxDistance = 0;
-static uint32_t threeD_Distancemax = 0;
+uint32_t threeD_Distancemax = 0;
 
 void gpsDistanceUpdate(void)
 {
