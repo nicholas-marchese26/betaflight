@@ -1859,6 +1859,7 @@ static const uint8_t osdElementDisplayOrder[] = {
     OSD_CUSTOM_MSG2,
     OSD_CUSTOM_MSG3,
     OSD_ALTITUDE,
+    OSD_SPOOL_LEFT,
     OSD_ROLL_PIDS,
     OSD_PITCH_PIDS,
     OSD_YAW_PIDS,
