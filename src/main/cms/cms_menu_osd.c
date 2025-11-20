@@ -89,6 +89,7 @@ const OSD_Entry menuOsdActiveElemsEntries[] =
     {"AVG CELL VOLTAGE",   OME_VISIBLE | DYNAMIC, NULL, &osdConfig_item_pos[OSD_AVG_CELL_VOLTAGE]},
 #ifdef USE_GPS
     {"BATTERY EFFICIENCY", OME_VISIBLE | DYNAMIC, NULL, &osdConfig_item_pos[OSD_EFFICIENCY]},
+    {"SPOOL LEFT",         OME_VISIBLE | DYNAMIC, NULL, &osdConfig_item_pos[OSD_SPOOL_LEFT]},
 #endif // GPS
     {"CROSSHAIRS",         OME_VISIBLE | DYNAMIC, NULL, &osdConfig_item_pos[OSD_CROSSHAIRS]},
     {"HORIZON",            OME_VISIBLE | DYNAMIC, NULL, &osdConfig_item_pos[OSD_ARTIFICIAL_HORIZON]},
