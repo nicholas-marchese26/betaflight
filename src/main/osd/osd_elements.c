@@ -175,7 +175,6 @@
 #include "sensors/rangefinder.h"
 
 #include "osd.h"
-#include "osd_draw.h"
 
 #ifdef USE_GPS_PLUS_CODES
 // located in lib/main/google/olc
